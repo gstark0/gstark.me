@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gregory Stark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gregory Stark">
+    <meta property="og:description" content="Devleoper and Video Maker living in European Union.">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-wrapper">
+            <div class="header-contact">
+                <a href="mailto:hello@gstark.me"><i class="fa fa-envelope"></i><span>&nbsp;Say hello</span></a>
+                <span class="menu-icon" style="color: #15DB95; cursor:pointer; font-size:30px; margin-left: 20px;" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidenav-content">
+                <div class="sidenav-sections">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="sidenav-contact">
+                    <a href="https://www.facebook.com/grzegorz.stark" target="_blank">Facebook</a>
+                    <a href="https://github.com/gstark0" target="_blank">GitHub</a>
+                    <a href="https://twitter.com/gstark0" target="_blank">Twitter</a>
+                    <a href="https://stackoverflow.com/users/9209863/g-stark" target="_blank">Stack Overflow</a>
+                    <a href="https://www.quora.com/profile/Grzegorz-Stark-2" target="_blank">Quora</a>
+                    <a href="https://www.youtube.com/channel/UCP828kkvGuEX3au4bPvvV0A" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-wrapper">
+            <h1>
+                Hey.<br>
+                I'm Gregory.<br>
+                Developer.
+            </h1>
+            <p>Check out some of my <span class="square"><a href="#work" class="contentLink">work</a></span>, or see what I'm <a href="#about" class="contentLink">about</a>.</p>
+        </div>
+        <div id="bg-picture" class="bg-picture">
+            <div class="bg-picture-inner"></div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="work-wrapper">
+            <h1>Work</h1>
+            <div class="work-items">
+                <div data-name="gci-award-letter" class="work-item modal-opener" style="background: linear-gradient(rgba(177, 41, 67, 0.8), rgba(177, 41, 67, 0.8)), url(img/projects/gci.jpg); background-position: center; background-size: cover;">
+                    <div class="work-item-content" style="color: white;">
+                        <div class="work-item-title">Google Code-In 2017</div>
+                        <div class="work-item-description">I'm Grand Prize Winner of international contest, organized by Google.</div>
+                    </div>
+                    <div class="work-item-tag">Contest</div>
+                </div>
+                <div data-name="gstarkme" class="work-item modal-opener" style="background: linear-gradient(rgba(244, 158, 66, 0.8), rgba(244, 158, 66, 0.8)), url(img/projects/gstarkme.jpg); background-position: center; background-size: cover;">
+                    <div class="work-item-content">
+                        <div class="work-item-title">gstark.me</div>
+                        <div class="work-item-description">Modern, mobile-friendly personal branding website. Yes, You're here at the moment.</div>
+                    </div>
+                    <div class="work-item-tag">HTML, CSS, JQuery</div>
+                </div>
+                <div class="work-item" onclick="window.open('https://play.google.com/store/apps/details?id=com.stark.taptozero');" style="background: linear-gradient(rgba(155, 99, 196, 0.8), rgba(155, 99, 196, 0.8)), url(img/projects/taptozero.jpeg); background-position: center; background-size: cover;">
+                    <div class="work-item-content">
+                        <div class="work-item-title">Tap To Zero!</div>
+                        <div class="work-item-description">Simple, and addictive game made in Unity.</div>
+                    </div>
+                    <div class="work-item-tag">Unity, C#, Android</div>
+                </div>
+                <div class="work-item" onclick="window.open('https://play.google.com/store/apps/details?id=com.stark.game');" style="background: linear-gradient(rgba(103, 181, 88, 0.8), rgba(103, 181, 88, 0.8)), url(img/projects/colorwar.jpeg); background-position: center; background-size: cover;">
+                    <div class="work-item-content">
+                        <div class="work-item-title">Color War</div>
+                        <div class="work-item-description">3D Top-Down shooter made in Unity.</div>
+                    </div>
+                    <div class="work-item-tag">Unity, C#, Android</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-wrapper">
+            <h1>About</h1>
+            <div class="about-text">
+                <p>My name is Gregory, I'm Developer and Machine Learning researcher living in Poland. I'm fascinated by Artificial Intelligence, Blockchain, Self Driving and Electric Cars. Besides that, I'm addicted to coding.</p>
+                <p>I'm also <a data-name="gci-award-letter" class="contentLink modal-opener" style="font-weight: 300; cursor: pointer;">Grand Prize Winner</a> contest - Google Code In 2017. During that time I worked for Open Source organization called Apertium. Because of my achivements, I was invited to Google Headquarters, in Mountain View, California.</p>
+            </div>
+            <div class="about-skills">
+
+            </div>
+            <img alt="" class="about-img" src="img/me.jpg">
+        </div>
+    </section>
+
+    <div id="gstarkme-modal" class="work-modal">
+        <span class="work-modal-close">&times;</span>
+        <img alt="" class="work-modal-content" src="img/projects/gstarkme.jpg">
+        <div class="caption">gstark.me</div>
+    </div>
+
+    <div id="gci-award-letter-modal" class="work-modal">
+        <span class="work-modal-close">&times;</span>
+        <img alt="" class="work-modal-content" src="img/gci-award-letter.jpg">
+        <div class="caption">Award Letter</div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">Say <a href="mailto:hello@gstark.me" class="contentLink">hello@gstark.me</a></div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/grzegorz.stark" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/gstark0" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/gstark0" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://stackoverflow.com/users/9209863/g-stark" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                <a href="https://www.quora.com/profile/Grzegorz-Stark-2" target="_blank"><i class="fab fa-quora"></i></a>
+                <a href="https://www.youtube.com/channel/UCP828kkvGuEX3au4bPvvV0A" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Main script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
