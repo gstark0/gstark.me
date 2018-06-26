@@ -270,6 +270,7 @@ header i {
     float: left;
     flex: 1 1 450px;
     max-width: 520px;
+    min-height: 560px;
     height: 45vh;
 }
 
